@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Wise - Cultivar</title>
+    <link href="css/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="flex flex-col justify-center items-center gap-0 bg-azulAgua">
+    <!--------------------------------------------------------------------->
+    <nav
+      class="w-screen flex flex-row justify-center items-center bg-amareloEscuro lg:justify-between lg:mt-0 lg:shadow-lg"
+    >
+      <a href="index.html" class="w-2/4 ml-3 pt-4 lg:w-3/12"
+        ><img src="images/logo.png" alt="" class=""
+      /></a>
+      <div class="w-2/4 flex flex-col lg:w-full lg:gap-5 lg:justify-between">
+        <div class="hidden lg:flex lg:flex-col items-center">
+          <h1 class="font-bree text-8xl">Farm Wise</h1>
+          <h2 class="font-bree text-3xl"><em>Feeding the Future</em></h2>
+        </div>
+        <ul
+          class="flex flex-col justify-evenly gap-3 mr-2 ml-2 lg:flex-row lg:justify-center lg:gap-0 lg:mr-0"
+        >
+          <li class="nav-lin activeLink lg:border-l-4 lg:border-l-white">
+            <a
+              href="index.html"
+              class="underline cursor-pointer drop-shadow-2xl underline-offset-4 lg:no-underline lg:underline-offset-auto"
+              >Cultivo</a
+            >
+          </li>
+          <li class="nav-lin">
+            <a
+              href="prosa.html"
+              class="underline cursor-pointer drop-shadow-2xl underline-offset-4 lg:no-underline"
+              >Prosa</a
+            >
+          </li>
+          <li class="nav-lin">
+            <a
+              href="about.html"
+              class="underline cursor-pointer drop-shadow-2xl underline-offset-4 lg:no-underline"
+              >Saiba mais</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--------------------------------------------------------------------->
+    <img
+      src="images/agricultor2.png"
+      alt=""
+      class="w-screen backdrop-opacity-100"
+    />
+    <section class="flex flex-col justify-center items-center mx-5 gap-4 mt-8">
+      <h1 class="font-bold font-bree text-4xl lg:text-5xl">Cultivar</h1>
+      <p class="font-normal font-raleway text-lg text-justify lg:text-3xl">
+        Carinhosamente, nomeamos essa seção de
+        <strong class="text-contraste font-bold text-xl lg:text-3xl"
+          >"Cultivar"</strong
+        >.
+      </p>
+      <p class="font-normal font-raleway text-lg text-justify lg:text-2xl">
+        <em class="text-contraste font-bold">Gente da terra</em>, gente como a
+        gente mesmo... Em nós, reside o sonho de viver o amanhã. Acordar, ver o
+        sol nascer e cuidar de nossa vida. E, já dizia a profecia...
+        <strong class="text-contraste font-bold"
+          ><em>O Sertão há de virar mar!</em></strong
+        >. Por isso, também sei que na nossa lida, o futuro há de vir melhor!
+      </p>
+      <p class="font-normal font-raleway text-lg text-justify lg:text-2xl">
+        A <span class="font-bree text-2xl">Farm Wise</span> acredita nas mãos
+        dessa gente, gente como a gente mesmo, reside um futuro melhor. Um
+        futuro com menos desiguldades. Um futuro em que, mesmo que uns tenham
+        tanto e outros tenham tão pouco, todos possam se alimentar.
+      </p>
+      <p class="font-normal font-raleway text-lg text-justify lg:text-2xl">
+        Nossa missão é ajudar essa gente. Escolha seu Estado (UF), o município
+        de sua morada e o tipo de plantação desejado. Clique em
+        <strong class="text-contraste font-bold">"Cultivar!"</strong>. A
+        Inteligência Artificial
+        <strong class="text-contraste font-bold">"Chat GPT"</strong> (chique,
+        não?) vai sugerir os três melhores cultivos do tipo desejado para a sua
+        localidade. Também, vai comentar um pouco do clima da sua terra! Depois,
+        clique em
+        <strong class="text-contraste font-bold">"Benefícios"</strong>. Lá,
+        poderemos ver o por que desses cultivos terem sido sugeridos. Por fim,
+        botão <strong class="text-contraste font-bold">"Plantio!"</strong> vai
+        te sugerir algumas dicas para o plantio vingar!
+      </p>
+    </section>
+    <!---------------------------------------------------------------------------->
+    <form
+      class="flex flex-col justify-center items-center gap-6 mt-8"
+      id="mainCrud"
+    >
+      <section name="places" class="flex flex-row gap-5">
+        <select
+          id="selectUF"
+          class="font-bree text-lg overflow-scroll lg:text-2xl"
+          required
+        >
+          <option value="" disabled selected>UF</option>
+        </select>
+
+        <select
+          id="selectCity"
+          class="font-bree text-xl overflow-scroll lg:text-3xl"
+          required
+        >
+          <option value="" disabled selected>Municipio</option>
+        </select>
+      </section>
+
+      <section
+        id="cardsContainer"
+        name="Cards"
+        class="flex flex-row flex-wrap justify-center items-center gap-8"
+      >
+        <div class="cards">
+          <label for="frutas" class="lg:flex lg:flex-col lg:gap-3">
+            <input
+              type="radio"
+              class="radio"
+              name="typePlant"
+              id="frutas"
+              required
+            />
+            <img
+              src="images/banana.png"
+              alt="Homem de chapéu preto, observando um cacho de banana verde"
+              class="cards-img"
+            />
+            <h3 class="cards-h3">Frutas</h3>
+            <p class="hidden text-justify font-raleway text-lg lg:block">
+              As frutas são alimentos naturais, ricos em nutrientes essenciais
+              para a saúde. Elas são fontes de vitaminas, minerais, fibras e
+              antioxidantes. Além disso, possuem sabores e cores variados,
+              proporcionando uma experiência sensorial agradável. Exemplos de
+              frutas incluem maçã, laranja, banana, morango, abacaxi...
+            </p>
+          </label>
+        </div>
+
+        <div class="cards">
+          <label for="legumes" class="lg:flex lg:flex-col lg:gap-3">
+            <input type="radio" class="radio" name="typePlant" id="legumes" />
+            <img src="images/pimentao.png" alt="" class="cards-img" />
+            <h3 class="cards-h3">Legumes</h3>
+            <p class="hidden text-justify font-raleway text-lg lg:block">
+              Os legumes são alimentos vegetais que possuem características
+              nutricionais importantes para a saúde. São fontes de vitaminas,
+              minerais e fibras, além de serem baixos em calorias. Eles auxiliam
+              na manutenção de um sistema imunológico saudável, na digestão e na
+              prevenção de doenças.
+            </p>
+          </label>
+        </div>
+
+        <div class="cards">
+          <label for="leguminosas" class="lg:flex lg:flex-col lg:gap-3">
+            <input
+              type="radio"
+              class="radio"
+              name="typePlant"
+              id="leguminosas"
+            />
+            <img src="images/feijao.png" alt="" class="cards-img" />
+            <h3 class="cards-h3">Leguminosas</h3>
+            <p class="hidden text-justify font-raleway text-lg lg:block">
+              São ricos em proteínas, fibras, vitaminas e minerais. Possuem
+              baixo teor de gordura e são fontes de carboidratos complexos.
+              Contribuem para a saúde cardiovascular, controle do colesterol,
+              regulação do açúcar no sangue e fortalecimento do sistema
+              imunológico.
+            </p>
+          </label>
+        </div>
+
+        <div class="cards">
+          <label for="verduras" class="lg:flex lg:flex-col lg:gap-3">
+            <input type="radio" class="radio" name="typePlant" id="verduras" />
+            <img src="images/alface.png" alt="" class="cards-img" />
+            <h3 class="cards-h3">Verduras</h3>
+            <p class="hidden text-justify font-raleway text-lg lg:block">
+              São alimentos vegetais com alto teor de vitaminas, minerais e
+              fibras. São baixas em calorias e ricas em antioxidantes, boas para
+              prevenção de doenças. Contribuem para a saúde digestiva,
+              fortalecimento do sistema imunológico e manutenção de um peso
+              saudável.
+            </p>
+          </label>
+        </div>
+
+        <div class="cards">
+          <label for="tuberculos" class="lg:flex lg:flex-col lg:gap-3">
+            <input
+              type="radio"
+              class="radio"
+              name="typePlant"
+              id="tuberculos"
+            />
+            <img src="images/mandioca.png" alt="" class="cards-img" />
+            <h3 class="cards-h3">Tubérculos</h3>
+            <p class="hidden text-justify font-raleway text-lg lg:block">
+              Os tubérculos são vegetais subterrâneos que armazenam nutrientes
+              essenciais. São ricos em amido, vitaminas e minerais, fornecendo
+              energia de forma sustentada. Oferecem benefícios nutricionais,
+              como fortalecimento do sistema imunológico e promoção da saúde
+              cardiovascular.
+            </p>
+          </label>
+        </div>
+      </section>
+      <button id="question" class="cta" type="submit">CULTIVAR!</button>
+    </form>
+
+    <div
+      id="loadingLocal"
+      class="hidden mt-4 h-12 w-12 border-4 border-l-gray-200 border-r-gray-200 border-b-gray-200 border-t-green-500 animate-spin ease-linear rounded-full lg:h-14 lg:w-14"
+    ></div>
+
+    <aside
+      name="Weather"
+      id="weather"
+      class="flex flex-col justify-center items-center gap-4 mt-8 hidden"
+    >
+      <h2 class="weather-h2">Características do Clima</h2>
+
+      <ul class="weather-li"></ul>
+    </aside>
+
+    <aside
+      name="response"
+      class="flex flex-col justify-center items-center gap-4 mt-8"
+    >
+      <h2 class="hints hidden">Sugestões de cultivo!</h2>
+      <ul class="hints-li">
+        <li></li>
+      </ul>
+
+      <button id="benefits" class="cta hidden">BENEFÍCIOS!</button>
+      <div
+        id="loading"
+        class="hidden mt-4 h-12 w-12 border-4 border-l-gray-200 border-r-gray-200 border-b-gray-200 border-t-green-500 animate-spin ease-linear rounded-full lg:h-14 lg:w-14"
+      ></div>
+    </aside>
+
+    <!-- Slider main container -->
+    <div class="swiper mt-8 hidden">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+      </div>
+    </div>
+
+    <aside
+      name="Plantio"
+      class="plantio flex flex-col justify-center mt-8 items-center gap-4"
+    >
+      <h2
+        class="plantio-h2 bg-verdinho text-white w-screen text-center text-4xl font-raleway font-bold p-4 hidden"
+      >
+        Boas práticas de plantio!
+      </h2>
+      <ul class="plantio-li"></ul>
+      <button id="btnPlantio" class="cta mb-4 hidden">Plantio!</button>
+      <div
+        id="loadingPlantio"
+        class="hidden mt-4 h-12 w-12 border-4 border-l-gray-200 border-r-gray-200 border-b-gray-200 border-t-green-500 animate-spin ease-linear rounded-full"
+      ></div>
+    </aside>
+
+    <!-- Slider main container -->
+    <div class="swiper swiperPlant mb-8 mt-8 hidden">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper swiper-wrapperPlant">
+        <!-- Slides -->
+      </div>
+    </div>
+
+    <button id="tryAgain" class="cta hidden">Cultivar novamente!</button>
+
+    <footer
+      class="bg-amareloClaro w-screen mt-8 lg:flex lg:flex-row lg:justify-between"
+    >
+      <p class="text-center font-normal font-bree p-3 text-xl lg:hidden">
+        Desenvolvido por @Hiva
+      </p>
+      <div
+        class="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:px-4 lg:w-3/12 lg:gap-3"
+      >
+        <h4 class="font-handWrite text-4xl">Thiago Matos</h4>
+        <h5 class="font-bree text-2xl">@Hiva</h5>
+      </div>
+      <div
+        class="hidden lg:flex lg:flex-col lg:items-center lg:py-5 lg:gap-4 lg:px-5 lg:w-9/12"
+      >
+        <h4 class="lg:font-bree lg:text-2xl">Parceiros:</h4>
+        <div class="lg:flex lg:flex-row lg:justify-between items-center">
+          <a
+            href="https://www.fiap.com.br"
+            target="_blank"
+            rel="external"
+            class="lg:w-1/5"
+          >
+            <img src="images/fiap.png" alt=""
+          /></a>
+          <a
+            href="https://www.kraftheinzfoodservice.com.br"
+            target="_blank"
+            rel="external"
+            class="lg:w-1/5"
+          >
+            <img src="images/logoHeinz.png" alt=""
+          /></a>
+          <a
+            href="https://www.microsoft.com/pt-br/"
+            target="_blank"
+            rel="external"
+            class="lg:w-1/5"
+          >
+            <img src="images/logoMS.png" alt=""
+          /></a>
+          <a
+            href="https://www.cacafome.com.br/#/"
+            target="_blank"
+            rel="external"
+            class="lg:w-1/5"
+          >
+            <img src="images/logoFome.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

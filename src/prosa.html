@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Wise - Prosear</title>
+    <link href="css/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="flex flex-col justify-center items-center bg-azulAgua">
+    <!--------------------------------------------------------------------->
+    <nav
+      class="w-screen flex flex-row justify-center items-center bg-amareloEscuro lg:justify-between lg:mt-0 lg:shadow-lg"
+    >
+      <a href="index.html" class="w-2/4 ml-3 pt-4 lg:w-3/12"
+        ><img src="images/logo.png" alt="" class=""
+      /></a>
+      <div class="w-2/4 flex flex-col lg:w-full lg:gap-5 lg:justify-between">
+        <div class="hidden lg:flex lg:flex-col items-center">
+          <h1 class="font-bree text-8xl">Farm Wise</h1>
+          <h2 class="font-bree text-3xl"><em>Feeding the Future</em></h2>
+        </div>
+        <ul
+          class="flex flex-col justify-evenly gap-3 mr-2 ml-2 lg:flex-row lg:justify-center lg:gap-0 lg:mr-0"
+        >
+          <li class="nav-lin lg:border-l-4 lg:border-l-white">
+            <a
+              href="index.html"
+              class="underline cursor-pointer drop-shadow-2xl underline-offset-4 lg:no-underline lg:underline-offset-auto"
+              >Cultivo</a
+            >
+          </li>
+          <li class="nav-lin activeLink">
+            <a
+              href="prosa.html"
+              class="underline cursor-pointer drop-shadow-2xl underline-offset-4 lg:no-underline"
+              >Prosa</a
+            >
+          </li>
+          <li class="nav-lin">
+            <a
+              href="about.html"
+              class="underline cursor-pointer drop-shadow-2xl underline-offset-4 lg:no-underline"
+              >Saiba mais</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <img src="images/agricultor3.png" alt="" />
+    <main
+      id="mainPattern"
+      class="flex flex-col items-center justify-center mt-8"
+    >
+      <h1 class="headerProsa">Prosa de fim de tarde</h1>
+      <p class="pProsa">
+        Acreditamos que nada melhor que uma conversa entre gente, gente como a
+        gente, para tirarmos nossas dúvidas. Por isso, trouxemos o Wise, nosso
+        sábio agricultor, para tirar um dedinho de prosa. Igual àquelas de fim
+        de tarde, com um bolo de fubá fresquinho. Bem coisa de casa
+        aconchegante, lar de vó.
+      </p>
+      <p class="pProsa">
+        É uma conversa mesmo. Nunca serão as mesmas respostas. Para você ter uma
+        ideia, toda vez que entrar nessa página, o Wise responderá à uma
+        pergunta:
+      </p>
+      <p
+        class="mx-8 text-left font-raleway text-lg lg:text-2xl lg:text-center lg:my-4 lg:font-bold"
+      >
+        <em>
+          Explique o papel do cooperativismo agrícola no Brasil, destacando suas
+          principais características, benefícios e impacto na economia rural,
+          por favor!
+        </em>
+      </p>
+      <div
+        id="loadingProsa"
+        class="hidden mt-6 h-12 w-12 border-4 border-l-gray-200 border-r-gray-200 border-b-gray-200 border-t-green-500 animate-spin ease-linear rounded-full lg:h-14 lg:w-14"
+      ></div>
+    </main>
+    <form
+      id="formQuestion"
+      class="flex flex-col justify-center items-center gap-4 mt-8 w-full mx-4"
+    >
+      <h2 id="scrollTo" class="headerProsa bg-amareloEscuro w-full p-4 mb-0">
+        Tire sua dúvida com o Wise!
+      </h2>
+      <p class="pProsa">
+        Escreva a sua pergunta na área em branco e clique em "Prosear!". Aguarde
+        alguns segundos que o Wise lhe responderá o que precisa! Lembre-se de
+        ser especifico toda vez. Embora o Wise seja vivido, ele só se lembra de
+        uma pergunta por vez...
+      </p>
+      <textarea
+        name=""
+        id="inputQuestion"
+        cols="40"
+        rows="10"
+        placeholder="Escreva aqui alguma pergunta para o Wise!"
+        required
+        class="areaProsa"
+      ></textarea>
+      <textarea
+        name=""
+        id="answer"
+        cols="40"
+        rows="10"
+        placeholder="Se aconchegue e me pergunte algo! Sou bem vivido nessa arte do cultivo. Me pergunte sobre o clima ideal para tal planta, como controlar pragas, os cuidados necessários para o cultivo..."
+        class="areaProsa"
+      ></textarea>
+      <button type="submit" class="cta lg:mb-8" id="btnSubmit">Prosear!</button>
+    </form>
+    <aside
+      class="flex flex-col justify-center items-center mt-8 lg:mt-0 lg:bg-[url('../images/bg-prosa2.png')] lg:bg-clip-padding lg:bg-no-repeat lg:bg-cover lg:w-screen"
+    >
+      <h2 class="headerProsa bg-amareloEscuro w-screen py-4 lg:mt-0 lg:pt-0">
+        Sugestões de prosa
+      </h2>
+      <p class="pProsa lg:font-bold lg:text-2xl lg:mb-8">
+        Perdido por onde começar? Clique em alguma das dúvidas frequentes:
+      </p>
+      <section
+        class="flex flex-col justify-center items-center gap-4 lg:mb-8 lg:w-3/5"
+      >
+        <div class="flex flex-col justify-center items-center">
+          <button
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+          >
+            Como funciona o sistema de irrigação na agricultura?
+          </button>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <button
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+          >
+            Como a tecnologia está impactando a agricultura moderna?
+          </button>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <button
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+          >
+            Quais são as técnicas utilizadas para controlar pragas e doenças na
+            agricultura?
+          </button>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <button
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+          >
+            Quais são as práticas recomendadas para o manejo do solo na
+            agricultura?
+          </button>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <button
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+          >
+            Quais são os benefícios da agricultura orgânica em comparação com a
+            agricultura convencional?
+          </button>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <button
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+          >
+            Conte-me um bom causo da época em que vivia na roça.
+          </button>
+        </div>
+        <div class="flex flex-col justify-center items-center w-full">
+          <div
+            class="font-raleway text-lg bg-amareloEscuro p-3 rounded-lg flex flex-col justify-center items-center w-4/5 gap-2"
+          >
+            <p class="lg:text-2xl">Como cultivar...</p>
+            <input
+              type="text"
+              name=""
+              id="inputTextQuestion"
+              maxlength="12"
+              minlength="3"
+              placeholder="O que deseja cultivar?"
+              class="w-full text-center p-2 font-raleway lg:placeholder:text-xl"
+              required
+            />
+            <button
+              class="sendCultivo bg-green-400 shadow-lg p-2 font-bree rounded hover:bg-white hover:text-green-500 lg:text-2xl"
+            >
+              Prosear!
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center w-full">
+          <div
+            class="font-raleway text-lg bg-amareloEscuro p-3 rounded-lg flex flex-col justify-center items-center w-4/5 gap-2"
+          >
+            <p class="lg:text-2xl">Qual a melhor época para plantar...</p>
+            <input
+              type="text"
+              name=""
+              id="inputTextQuestion2"
+              maxlength="12"
+              minlength="3"
+              placeholder="O que deseja cultivar?"
+              class="w-full text-center p-2 font-raleway lg:placeholder:text-xl"
+            />
+            <button
+              class="sendCultivo bg-green-400 shadow-lg p-2 font-bree rounded hover:bg-white hover:text-green-500 lg:text-2xl"
+            >
+              Prosear!
+            </button>
+          </div>
+        </div>
+      </section>
+    </aside>
+    <footer
+      class="bg-amareloClaro w-screen mt-8 lg:flex lg:flex-row lg:justify-between lg:mt-0"
+    >
+      <p class="text-center font-normal font-bree p-3 text-xl lg:hidden">
+        Desenvolvido por @Hiva
+      </p>
+      <div
+        class="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:px-4 lg:w-3/12 lg:gap-3"
+      >
+        <h4 class="font-handWrite text-4xl">Thiago Matos</h4>
+        <h5 class="font-bree text-2xl">@Hiva</h5>
+      </div>
+      <div
+        class="hidden lg:flex lg:flex-col lg:items-center lg:py-5 lg:gap-4 lg:px-5 lg:w-9/12"
+      >
+        <h4 class="lg:font-bree lg:text-2xl">Parceiros:</h4>
+        <div class="lg:flex lg:flex-row lg:justify-between items-center">
+          <a
+            href="https://www.fiap.com.br"
+            target="_blank"
+            rel="external"
+            class="lg:w-1/5"
+          >
+            <img src="images/fiap.png" alt=""
+          /></a>
+          <a
+            href="https://www.kraftheinzfoodservice.com.br"
+            target="_blank"
+            rel="external"
+            class="lg:w-1/5"
+          >
+            <img src="images/logoHeinz.png" alt=""
+          /></a>
+          <a
+            href="https://www.microsoft.com/pt-br/"
+            target="_blank"
+            rel="external"
+            class="lg:w-1/5"
+          >
+            <img src="images/logoMS.png" alt=""
+          /></a>
+          <a
+            href="https://www.cacafome.com.br/#/"
+            target="_blank"
+            rel="external"
+            class="lg:w-1/5"
+          >
+            <img src="images/logoFome.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="prosa.js"></script>
+  </body>
+</html>

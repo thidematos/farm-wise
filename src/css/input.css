@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway:wght@400;700;900&family=Shadows+Into+Light&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cards {
+  @apply bg-verdinho p-4 rounded-lg shadow hover:shadow-2xl flex flex-col justify-center items-center gap-4 lg:pt-0 lg:w-2/6;
+}
+
+.cards-h3 {
+  @apply text-center font-black font-bree text-3xl text-white drop-shadow-lg lg:text-4xl;
+}
+
+.cards-img {
+  @apply rounded drop-shadow-lg lg:w-full;
+}
+
+.hints,
+.weather-h2 {
+  @apply font-raleway text-4xl font-black text-white bg-verdinho w-screen text-center p-4 lg:text-5xl;
+}
+
+option {
+  @apply text-sm;
+}
+
+.cta {
+  @apply bg-green-500 font-bree text-white p-4 rounded-lg text-center text-3xl hover:text-green-500 hover:bg-amareloEscuro drop-shadow-md shadow-lg lg:text-5xl;
+}
+
+.hints-li,
+.weather-li {
+  @apply flex flex-col justify-center items-center p-5 gap-6 text-xl font-raleway font-bold text-white;
+}
+
+.cityName {
+  @apply font-raleway font-bold text-white text-4xl lg:text-5xl;
+}
+
+.cityText {
+  @apply text-xl font-normal lg:text-2xl;
+}
+
+.recomendationLi {
+  @apply lg:text-3xl;
+}
+
+.radio {
+  @apply opacity-0;
+}
+
+.selected {
+  @apply bg-green-500 scale-105 duration-200;
+}
+
+.swiper {
+  @apply w-11/12 max-w-full max-h-screen min-h-0 min-w-0;
+}
+
+.swiper-slide {
+  @apply font-raleway text-left;
+}
+
+.swiper-h4 {
+  @apply font-bree text-3xl font-bold mb-2 lg:text-5xl;
+}
+
+.swiper-p {
+  @apply font-raleway text-lg lg:text-2xl;
+}
+
+.nav-lin {
+  @apply font-bree text-white text-2xl text-center bg-verdinho w-full rounded p-2 shadow-xl hover:bg-white hover:text-azulAgua duration-200 hover:scale-x-105 sm:text-4xl lg:bg-transparent lg:shadow-none lg:border-r-4 lg:border-r-white lg:hover:scale-x-100 lg:py-2 lg:px-0 lg:rounded-none lg:w-full lg:text-black;
+}
+
+.activeLink {
+  @apply lg:bg-white lg:text-azulAgua;
+}
+
+.headerProsa {
+  @apply font-bree font-bold text-4xl text-center m-4 lg:text-5xl;
+}
+
+.pProsa {
+  @apply font-raleway font-normal text-xl text-justify m-5 lg:text-2xl;
+}
+
+.areaProsa {
+  @apply overflow-scroll placeholder:font-raleway placeholder:p-2 font-raleway p-4 text-justify text-lg leading-7 w-screen lg:text-2xl lg:w-4/5;
+}
+
+.errorBorder {
+  @apply border border-solid border-red-400;
+}
+
+.link {
+  @apply text-contraste underline;
+}
