@@ -57,11 +57,21 @@
       </div>
     </nav>
     <!--------------------------------------------------------------------->
-    <img
-      src="images/agricultor2.png"
-      alt=""
-      class="w-screen backdrop-opacity-100"
-    />
+    <picture>
+      <source
+        media="(max-width: 1023px)"
+        srcset="/images/agricultor2.png"
+        type="image/png"
+        class="w-screen"
+      />
+      <source
+        media="(max-width: 1260)"
+        srcset="/images/agricultor-1024.png"
+        type="image/png"
+        class="w-screen"
+      />
+      <img src="images/agricultor-1280.png" alt="" class="w-screen" />
+    </picture>
     <section
       class="flex flex-col justify-center items-center mx-5 gap-4 mt-8 xl:w-3/4"
     >

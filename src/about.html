@@ -52,7 +52,21 @@
         </ul>
       </div>
     </nav>
-    <img src="images/global-solution.png" alt="" class="w-screen" />
+    <picture>
+      <source
+        media="(max-width: 1023px)"
+        srcset="/images/global-solution.png"
+        type="image/png"
+        class="w-screen"
+      />
+      <source
+        media="(max-width: 1260)"
+        srcset="/images/global-solution-1024.png"
+        type="image/png"
+        class="w-screen"
+      />
+      <img src="images/global-solution-1280.png" alt="" class="w-screen" />
+    </picture>
     <section class="flex flex-col justify-center items-center gap-5 mt-8">
       <div class="px-10 xl:w-4/5 indent-10">
         <h2

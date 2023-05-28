@@ -52,7 +52,21 @@
         </ul>
       </div>
     </nav>
-    <img src="images/agricultor3.png" alt="" />
+    <picture>
+      <source
+        media="(max-width: 1023px)"
+        srcset="/images/agricultor3.png"
+        type="image/png"
+        class="w-screen"
+      />
+      <source
+        media="(max-width: 1260)"
+        srcset="/images/agricultor3-1024.png"
+        type="image/png"
+        class="w-screen"
+      />
+      <img src="images/agricultor3-1024.png" alt="" class="w-screen" />
+    </picture>
     <main
       id="mainPattern"
       class="flex flex-col items-center justify-center mt-8 xl:w-3/5"
