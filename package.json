@@ -83,6 +83,7 @@
     "yaml": "^2.3.0"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -90,5 +91,13 @@
     "IA"
   ],
   "author": "Thiago Luiz de Matos",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thidematos/wise-farm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thidematos/wise-farm/issues"
+  },
+  "homepage": "https://github.com/thidematos/wise-farm#readme"
 }
