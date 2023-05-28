@@ -13,18 +13,22 @@
     <nav
       class="w-screen flex flex-row justify-center items-center bg-amareloEscuro lg:justify-between lg:mt-0 lg:shadow-lg"
     >
-      <a href="index.html" class="w-2/4 ml-3 pt-4 lg:w-3/12"
-        ><img src="images/logo.png" alt="" class=""
+      <a href="index.html" class="w-2/4 ml-3 pt-4 lg:w-3/12 xl:w-1/12 xl:pt-2"
+        ><img src="images/logo.png" alt="" class="img"
       /></a>
-      <div class="w-2/4 flex flex-col lg:w-full lg:gap-5 lg:justify-between">
-        <div class="hidden lg:flex lg:flex-col items-center">
-          <h1 class="font-bree text-8xl">Farm Wise</h1>
-          <h2 class="font-bree text-3xl"><em>Feeding the Future</em></h2>
+      <div
+        class="w-2/4 flex flex-col lg:w-full lg:gap-5 lg:justify-between xl:flex-row xl:justify-between xl:items-center"
+      >
+        <div class="hidden lg:flex lg:flex-col items-center xl:w-2/5">
+          <h1 class="font-bree text-8xl xl:text-4xl">Farm Wise</h1>
+          <h2 class="font-bree text-3xl xl:text-2xl">
+            <em>Feeding the Future</em>
+          </h2>
         </div>
         <ul
-          class="flex flex-col justify-evenly gap-3 mr-2 ml-2 lg:flex-row lg:justify-center lg:gap-0 lg:mr-0"
+          class="flex flex-col justify-evenly gap-3 mr-2 ml-2 lg:flex-row lg:justify-center lg:gap-0 lg:mr-0 xl:w-3/5"
         >
-          <li class="nav-lin lg:border-l-4 lg:border-l-white">
+          <li class="nav-lin activeLink lg:border-l-4 lg:border-l-white">
             <a
               href="index.html"
               class="underline cursor-pointer drop-shadow-2xl underline-offset-4 lg:no-underline lg:underline-offset-auto"
@@ -38,7 +42,7 @@
               >Prosa</a
             >
           </li>
-          <li class="nav-lin activeLink">
+          <li class="nav-lin">
             <a
               href="about.html"
               class="underline cursor-pointer drop-shadow-2xl underline-offset-4 lg:no-underline"
@@ -48,47 +52,51 @@
         </ul>
       </div>
     </nav>
-    <img src="images/global-solution.png" alt="" />
+    <img src="images/global-solution.png" alt="" class="w-screen" />
     <section class="flex flex-col justify-center items-center gap-5 mt-8">
-      <h2 class="font-bold font-bree text-lg text-center mx-3 lg:text-3xl">
-        Ajudando a solucionar os problemas da fome mundial e da escassez de
-        alimentos, promovendo a agricultura sustentável
-      </h2>
-      <p class="pProsa">
-        A
-        <a
-          href="https://www.fiap.com.br"
-          target="_blank"
-          rel="external"
-          class="link"
-          >FIAP</a
+      <div class="px-10 xl:w-4/5 indent-10">
+        <h2
+          class="font-bold font-bree text-lg text-center mx-3 lg:text-3xl xl:text-2xl"
         >
-        se uniu a
-        <a
-          href="https://www.kraftheinzfoodservice.com.br"
-          target="_blank"
-          rel="external"
-          class="link"
-          >Kraft Heinz</a
-        >,
-        <a
-          href="https://www.microsoft.com/pt-br"
-          target="_blank"
-          rel="external"
-          class="link"
-          >Microsoft</a
-        >
-        e a
-        <a
-          href="https://www.cacafome.com.br/#/"
-          target="_blank"
-          rel="external"
-          class="link"
-          >Ong Caça-Fome</a
-        >
-        para, por meio da tecnologia, promover ações para reduzir a fome global,
-        a escassez de alimentos e promover a agricultura sustentável.
-      </p>
+          Ajudando a solucionar os problemas da fome mundial e da escassez de
+          alimentos, promovendo a agricultura sustentável
+        </h2>
+        <p class="pProsa">
+          A
+          <a
+            href="https://www.fiap.com.br"
+            target="_blank"
+            rel="external"
+            class="link"
+            >FIAP</a
+          >
+          se uniu a
+          <a
+            href="https://www.kraftheinzfoodservice.com.br"
+            target="_blank"
+            rel="external"
+            class="link"
+            >Kraft Heinz</a
+          >,
+          <a
+            href="https://www.microsoft.com/pt-br"
+            target="_blank"
+            rel="external"
+            class="link"
+            >Microsoft</a
+          >
+          e a
+          <a
+            href="https://www.cacafome.com.br/#/"
+            target="_blank"
+            rel="external"
+            class="link"
+            >Ong Caça-Fome</a
+          >
+          para, por meio da tecnologia, promover ações para reduzir a fome
+          global, a escassez de alimentos e promover a agricultura sustentável.
+        </p>
+      </div>
       <div
         class="flex flex-col py-6 justify-end items-center gap-7 bg-[url('../images/about-agricultor.png')] w-screen bg-cover lg:flex-row lg:h-80 lg:justify-center"
       >
@@ -97,27 +105,29 @@
         <img src="images/logoMS.png" alt="" class="w-3/5 lg:w-1/5" />
         <img src="images/logoFome.png" alt="" class="w-3/5 lg:w-1/5" />
       </div>
-      <p class="pProsa">
-        O projeto "Farm Wise" pretende ser um "companheiro", um assistente que
-        fornece as respostas para as perguntas dos pequenos produtores, de forma
-        rápida, simples e objetiva. A API fornecida pela
-        <a
-          href="https://openai.com"
-          target="_blank"
-          rel="external"
-          class="text-contraste underline"
-          >Open AI</a
-        >
-        nos permite interagir com IA generativa "Chat GPT". Aplicada ao "Farm
-        Wise", a IA interpreta o carinhoso papel de "Wise", um sábio agricultor.
-        Pois, acreditamos que somente um produtor compreende as necessidades e
-        os anseios de outro.
-      </p>
-      <p class="pProsa">
-        Não há ninguém melhor que o próprio Wise para explicar a relação
-        singela, única, estabelecida entre produtores. O texto a seguir foi
-        escrito pelo Wise, a partir da pergunta:
-      </p>
+      <div class="px-10 xl:w-4/5 indent-10">
+        <p class="pProsa">
+          O projeto "Farm Wise" pretende ser um "companheiro", um assistente que
+          fornece as respostas para as perguntas dos pequenos produtores, de
+          forma rápida, simples e objetiva. A API fornecida pela
+          <a
+            href="https://openai.com"
+            target="_blank"
+            rel="external"
+            class="text-contraste underline"
+            >Open AI</a
+          >
+          nos permite interagir com IA generativa "Chat GPT". Aplicada ao "Farm
+          Wise", a IA interpreta o carinhoso papel de "Wise", um sábio
+          agricultor. Pois, acreditamos que somente um produtor compreende as
+          necessidades e os anseios de outro.
+        </p>
+        <p class="pProsa">
+          Não há ninguém melhor que o próprio Wise para explicar a relação
+          singela, única, estabelecida entre produtores. O texto a seguir foi
+          escrito pelo Wise, a partir da pergunta:
+        </p>
+      </div>
       <h4 class="font-bree text-3xl mx-4 text-center lg:text-4xl">
         <em>Por que um agricultor entende outro agricultor?</em>
       </h4>
@@ -134,80 +144,88 @@
     </section>
     <section class="flex flex-col mt-8 lg:gap-6">
       <h3
-        class="font-bold font-bree text-4xl text-center lg:text-5xl w-screen bg-amareloEscuro py-4"
+        class="font-bold font-bree text-4xl text-center lg:text-5xl w-screen bg-amareloEscuro py-4 xl:text-4xl"
       >
         De Produtor para Produtor
       </h3>
       <p
-        class="font-bold font-bree text-xl text-right p-4 lg:text-3xl lg:w-screen"
+        class="font-bold font-bree text-xl text-right p-4 lg:text-3xl lg:w-screen xl:text-2xl xl:text-center"
       >
         Guimarães Rosa <br />
         Interpretado por "Wise"
       </p>
     </section>
     <section class="flex flex-col mt-8 justify-center items-center">
-      <p class="pProsa">
-        O sertão, essa vasta terra abençoada pelo sol inclemente e pelas chuvas
-        escassas, é morada de homens
-        <strong class="text-contraste font-bold"
-          ><em>valentes e persistentes</em></strong
-        >, cuja labuta diária é moldada pelo arado, pela enxada e pela dureza da
-        terra. São agricultores, guardiões da terra que lhes sustenta e lhes
-        chama para o trabalho árduo e recompensador.
-      </p>
-      <p class="pProsa">
-        Nas entranhas dessa lida, tão
-        <strong class="text-contraste font-bold"
-          ><em>singela e complexa</em></strong
-        >
-        ao mesmo tempo, há um entendimento silencioso que
-        <strong class="text-contraste font-bold"
-          ><em>transcende palavras</em></strong
-        >
-        e se faz presente em cada sulco aberto na terra, em cada semente
-        plantada com esperança. É um entendimento que nasce da dor compartilhada
-        das colheitas perdidas, das noites de vigília contra pragas e das
-        incertezas que se escondem no horizonte.
-      </p>
-      <p class="pProsa">
-        Um agricultor entende outro agricultor porque compartilham dos mesmos
-        desafios, das mesmas inquietudes e da mesma
-        <strong class="text-contraste font-bold"
-          ><em>paixão pela terra</em></strong
-        >. Eles sabem, em seus corações marcados pelo suor e pelo sol
-        escaldante, que a vida no campo não é feita apenas de trabalho braçal,
-        mas também de paciência, resiliência e
-        <strong class="text-contraste font-bold"><em>fé na natureza</em></strong
-        >.
-      </p>
-      <img src="images/pintura.png" alt="" class="w-screen" />
-      <p class="pProsa">
-        Eles entendem a linguagem dos ventos, dos pássaros e dos rios,
-        interpretando os sinais que a natureza lhes oferece como
-        <strong class="text-contraste font-bold">
-          <em> verdadeiros poetas rurais </em> </strong
-        >. Nas conversas ao pé do fogão a lenha, trocam experiências, segredos
-        ancestrais e sabedorias transmitidas de geração em geração.
-      </p>
-      <p class="pProsa">
-        Um agricultor entende outro agricultor porque sabem que
-        <strong class="text-contraste font-bold">
-          <em> o cultivo da terra é um ato de amor </em>
-        </strong>
-        e de conexão com as raízes mais profundas de nossa existência. Eles
-        compreendem que o solo fértil guarda em si a promessa de fartura e
-        sustento, mas também o peso das intempéries e das adversidades.
-      </p>
-
-      <p class="pProsa">
-        E assim, entre uma lavoura e outra, entre o romper do dia e o anoitecer,
-        esses homens simples e sábios constroem laços invisíveis que transcendem
-        as fronteiras das palavras. Um olhar, um gesto, um aperto de mão firme
-        revelam a
-        <strong class="text-contraste font-bold"
-          ><em>cumplicidade de almas que trilham o mesmo caminho</em></strong
-        >, mesmo que separados por vastas extensões de terra.
-      </p>
+      <div class="w-full px-10 xl:w-4/5 indent-10">
+        <p class="pProsa">
+          O sertão, essa vasta terra abençoada pelo sol inclemente e pelas
+          chuvas escassas, é morada de homens
+          <strong class="text-contraste font-bold"
+            ><em>valentes e persistentes</em></strong
+          >, cuja labuta diária é moldada pelo arado, pela enxada e pela dureza
+          da terra. São agricultores, guardiões da terra que lhes sustenta e
+          lhes chama para o trabalho árduo e recompensador.
+        </p>
+        <p class="pProsa">
+          Nas entranhas dessa lida, tão
+          <strong class="text-contraste font-bold"
+            ><em>singela e complexa</em></strong
+          >
+          ao mesmo tempo, há um entendimento silencioso que
+          <strong class="text-contraste font-bold"
+            ><em>transcende palavras</em></strong
+          >
+          e se faz presente em cada sulco aberto na terra, em cada semente
+          plantada com esperança. É um entendimento que nasce da dor
+          compartilhada das colheitas perdidas, das noites de vigília contra
+          pragas e das incertezas que se escondem no horizonte.
+        </p>
+        <p class="pProsa">
+          Um agricultor entende outro agricultor porque compartilham dos mesmos
+          desafios, das mesmas inquietudes e da mesma
+          <strong class="text-contraste font-bold"
+            ><em>paixão pela terra</em></strong
+          >. Eles sabem, em seus corações marcados pelo suor e pelo sol
+          escaldante, que a vida no campo não é feita apenas de trabalho braçal,
+          mas também de paciência, resiliência e
+          <strong class="text-contraste font-bold"
+            ><em>fé na natureza</em></strong
+          >.
+        </p>
+      </div>
+      <img
+        src="images/pintura.png"
+        alt=""
+        class="w-screen xl:w-4/5 rounded-xl"
+      />
+      <div class="w-full px-10 xl:w-4/5 indent-10">
+        <p class="pProsa">
+          Eles entendem a linguagem dos ventos, dos pássaros e dos rios,
+          interpretando os sinais que a natureza lhes oferece como
+          <strong class="text-contraste font-bold">
+            <em> verdadeiros poetas rurais </em> </strong
+          >. Nas conversas ao pé do fogão a lenha, trocam experiências, segredos
+          ancestrais e sabedorias transmitidas de geração em geração.
+        </p>
+        <p class="pProsa">
+          Um agricultor entende outro agricultor porque sabem que
+          <strong class="text-contraste font-bold">
+            <em> o cultivo da terra é um ato de amor </em>
+          </strong>
+          e de conexão com as raízes mais profundas de nossa existência. Eles
+          compreendem que o solo fértil guarda em si a promessa de fartura e
+          sustento, mas também o peso das intempéries e das adversidades.
+        </p>
+        <p class="pProsa">
+          E assim, entre uma lavoura e outra, entre o romper do dia e o
+          anoitecer, esses homens simples e sábios constroem laços invisíveis
+          que transcendem as fronteiras das palavras. Um olhar, um gesto, um
+          aperto de mão firme revelam a
+          <strong class="text-contraste font-bold"
+            ><em>cumplicidade de almas que trilham o mesmo caminho</em></strong
+          >, mesmo que separados por vastas extensões de terra.
+        </p>
+      </div>
     </section>
     <footer
       class="bg-amareloClaro w-screen mt-8 lg:flex lg:flex-row lg:justify-between"

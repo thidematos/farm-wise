@@ -87,6 +87,29 @@ app.get('/placeWeather/:placeID/munWeather/:munID', async (request, answer) => {
   answer.json(json.choices[0]);
 });
 
+// -------------- function fetchImage ---------------
+const google = require('googleapis').google;
+const customSearch = google.customsearch('v1');
+const googleSearchCredentials = process.env.SE_ID;
+const GSKey = process.env.API_KEY;
+
+app.get('/placeImage/:placeID', async (request, answer) => {
+  const { placeID } = request.params;
+  const response = await customSearch.cse.list({
+    auth: GSKey,
+    cx: googleSearchCredentials,
+    q: `${placeID}`,
+    searchType: 'image',
+    imgSize: 'large',
+    num: 5,
+  });
+  const imagesUrl = response.data.items.map((item) => {
+    return item.link;
+  });
+  console.log(imagesUrl);
+  answer.json(imagesUrl);
+});
+
 // ---------- function fetchPlant -------------
 app.get(
   '/elementPlant/:elementID/placePlant/:placeID/munPlant/:munID',

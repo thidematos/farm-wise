@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 .cards {
-  @apply bg-verdinho p-4 rounded-lg shadow hover:shadow-2xl flex flex-col justify-center items-center gap-4 lg:pt-0 lg:w-2/6;
+  @apply bg-verdinho p-4 rounded-lg shadow hover:shadow-2xl flex flex-col justify-center items-center gap-4 lg:pt-0 lg:w-2/6 xl:w-72;
 }
 
 .cards-h3 {
-  @apply text-center font-black font-bree text-3xl text-white drop-shadow-lg lg:text-4xl;
+  @apply text-center font-black font-bree text-3xl text-white drop-shadow-lg lg:text-4xl xl:text-3xl;
 }
 
 .cards-img {
@@ -17,7 +17,7 @@
 
 .hints,
 .weather-h2 {
-  @apply font-raleway text-4xl font-black text-white bg-verdinho w-screen text-center p-4 lg:text-5xl;
+  @apply font-raleway text-4xl font-black text-white bg-verdinho w-screen text-center p-4 lg:text-5xl xl:text-3xl;
 }
 
 option {
@@ -25,7 +25,7 @@ option {
 }
 
 .cta {
-  @apply bg-green-500 font-bree text-white p-4 rounded-lg text-center text-3xl hover:text-green-500 hover:bg-amareloEscuro drop-shadow-md shadow-lg lg:text-5xl;
+  @apply bg-green-500 font-bree text-white p-4 rounded-lg text-center text-3xl hover:text-green-500 hover:bg-amareloEscuro drop-shadow-md shadow-lg lg:text-5xl xl:text-4xl;
 }
 
 .hints-li,
@@ -38,7 +38,7 @@ option {
 }
 
 .cityText {
-  @apply text-xl font-normal lg:text-2xl;
+  @apply text-xl font-normal lg:text-2xl xl:w-1/2;
 }
 
 .recomendationLi {
@@ -62,7 +62,7 @@ option {
 }
 
 .swiper-h4 {
-  @apply font-bree text-3xl font-bold mb-2 lg:text-5xl;
+  @apply font-bree text-3xl font-bold mb-2 lg:text-5xl xl:text-4xl;
 }
 
 .swiper-p {
@@ -70,7 +70,7 @@ option {
 }
 
 .nav-lin {
-  @apply font-bree text-white text-2xl text-center bg-verdinho w-full rounded p-2 shadow-xl hover:bg-white hover:text-azulAgua duration-200 hover:scale-x-105 sm:text-4xl lg:bg-transparent lg:shadow-none lg:border-r-4 lg:border-r-white lg:hover:scale-x-100 lg:py-2 lg:px-0 lg:rounded-none lg:w-full lg:text-black;
+  @apply font-bree text-white text-2xl text-center bg-verdinho w-full rounded p-2 shadow-xl hover:bg-white hover:text-azulAgua duration-200 hover:scale-x-105 sm:text-4xl lg:bg-transparent lg:shadow-none lg:border-r-4 lg:border-r-white lg:hover:scale-x-100 lg:py-2 lg:px-0 lg:rounded-none lg:w-full lg:text-black xl:text-2xl;
 }
 
 .activeLink {
@@ -78,15 +78,15 @@ option {
 }
 
 .headerProsa {
-  @apply font-bree font-bold text-4xl text-center m-4 lg:text-5xl;
+  @apply font-bree font-bold text-4xl text-center my-4 lg:text-5xl xl:text-4xl;
 }
 
 .pProsa {
-  @apply font-raleway font-normal text-xl text-justify m-5 lg:text-2xl;
+  @apply font-raleway font-normal text-xl text-justify my-5 lg:text-2xl xl:text-xl;
 }
 
 .areaProsa {
-  @apply overflow-scroll placeholder:font-raleway placeholder:p-2 font-raleway p-4 text-justify text-lg leading-7 w-screen lg:text-2xl lg:w-4/5;
+  @apply overflow-scroll placeholder:font-raleway placeholder:p-2 font-raleway p-4 text-justify text-lg leading-7 w-screen lg:text-2xl lg:w-4/5 xl:text-xl;
 }
 
 .errorBorder {

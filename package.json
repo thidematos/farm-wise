@@ -30,6 +30,7 @@
     "function-bind": "^1.1.1",
     "glob": "^7.1.6",
     "glob-parent": "^6.0.2",
+    "googleapis": "^118.0.0",
     "has": "^1.0.3",
     "inflight": "^1.0.6",
     "inherits": "^2.0.4",
@@ -83,7 +84,6 @@
     "yaml": "^2.3.0"
   },
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -91,13 +91,5 @@
     "IA"
   ],
   "author": "Thiago Luiz de Matos",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thidematos/wise-farm.git"
-  },
-  "bugs": {
-    "url": "https://github.com/thidematos/wise-farm/issues"
-  },
-  "homepage": "https://github.com/thidematos/wise-farm#readme"
+  "license": "MIT"
 }

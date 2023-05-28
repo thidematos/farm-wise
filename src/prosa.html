@@ -13,25 +13,29 @@
     <nav
       class="w-screen flex flex-row justify-center items-center bg-amareloEscuro lg:justify-between lg:mt-0 lg:shadow-lg"
     >
-      <a href="index.html" class="w-2/4 ml-3 pt-4 lg:w-3/12"
-        ><img src="images/logo.png" alt="" class=""
+      <a href="index.html" class="w-2/4 ml-3 pt-4 lg:w-3/12 xl:w-1/12 xl:pt-2"
+        ><img src="images/logo.png" alt="" class="img"
       /></a>
-      <div class="w-2/4 flex flex-col lg:w-full lg:gap-5 lg:justify-between">
-        <div class="hidden lg:flex lg:flex-col items-center">
-          <h1 class="font-bree text-8xl">Farm Wise</h1>
-          <h2 class="font-bree text-3xl"><em>Feeding the Future</em></h2>
+      <div
+        class="w-2/4 flex flex-col lg:w-full lg:gap-5 lg:justify-between xl:flex-row xl:justify-between xl:items-center"
+      >
+        <div class="hidden lg:flex lg:flex-col items-center xl:w-2/5">
+          <h1 class="font-bree text-8xl xl:text-4xl">Farm Wise</h1>
+          <h2 class="font-bree text-3xl xl:text-2xl">
+            <em>Feeding the Future</em>
+          </h2>
         </div>
         <ul
-          class="flex flex-col justify-evenly gap-3 mr-2 ml-2 lg:flex-row lg:justify-center lg:gap-0 lg:mr-0"
+          class="flex flex-col justify-evenly gap-3 mr-2 ml-2 lg:flex-row lg:justify-center lg:gap-0 lg:mr-0 xl:w-3/5"
         >
-          <li class="nav-lin lg:border-l-4 lg:border-l-white">
+          <li class="nav-lin activeLink lg:border-l-4 lg:border-l-white">
             <a
               href="index.html"
               class="underline cursor-pointer drop-shadow-2xl underline-offset-4 lg:no-underline lg:underline-offset-auto"
               >Cultivo</a
             >
           </li>
-          <li class="nav-lin activeLink">
+          <li class="nav-lin">
             <a
               href="prosa.html"
               class="underline cursor-pointer drop-shadow-2xl underline-offset-4 lg:no-underline"
@@ -51,7 +55,7 @@
     <img src="images/agricultor3.png" alt="" />
     <main
       id="mainPattern"
-      class="flex flex-col items-center justify-center mt-8"
+      class="flex flex-col items-center justify-center mt-8 xl:w-3/5"
     >
       <h1 class="headerProsa">Prosa de fim de tarde</h1>
       <p class="pProsa">
@@ -84,33 +88,39 @@
       id="formQuestion"
       class="flex flex-col justify-center items-center gap-4 mt-8 w-full mx-4"
     >
-      <h2 id="scrollTo" class="headerProsa bg-amareloEscuro w-full p-4 mb-0">
+      <h2 id="scrollTo" class="headerProsa bg-amareloEscuro w-full py-4 mb-0">
         Tire sua dúvida com o Wise!
       </h2>
-      <p class="pProsa">
-        Escreva a sua pergunta na área em branco e clique em "Prosear!". Aguarde
-        alguns segundos que o Wise lhe responderá o que precisa! Lembre-se de
-        ser especifico toda vez. Embora o Wise seja vivido, ele só se lembra de
-        uma pergunta por vez...
-      </p>
-      <textarea
-        name=""
-        id="inputQuestion"
-        cols="40"
-        rows="10"
-        placeholder="Escreva aqui alguma pergunta para o Wise!"
-        required
-        class="areaProsa"
-      ></textarea>
-      <textarea
-        name=""
-        id="answer"
-        cols="40"
-        rows="10"
-        placeholder="Se aconchegue e me pergunte algo! Sou bem vivido nessa arte do cultivo. Me pergunte sobre o clima ideal para tal planta, como controlar pragas, os cuidados necessários para o cultivo..."
-        class="areaProsa"
-      ></textarea>
-      <button type="submit" class="cta lg:mb-8" id="btnSubmit">Prosear!</button>
+      <div
+        class="w-full xl:w-3/5 flex flex-col justify-center items-center gap-8"
+      >
+        <p class="pProsa">
+          Escreva a sua pergunta na área em branco e clique em "Prosear!".
+          Aguarde alguns segundos que o Wise lhe responderá o que precisa!
+          Lembre-se de ser especifico toda vez. Embora o Wise seja vivido, ele
+          só se lembra de uma pergunta por vez...
+        </p>
+        <textarea
+          name=""
+          id="inputQuestion"
+          cols="40"
+          rows="10"
+          placeholder="Escreva aqui alguma pergunta para o Wise!"
+          required
+          class="areaProsa"
+        ></textarea>
+        <textarea
+          name=""
+          id="answer"
+          cols="40"
+          rows="10"
+          placeholder="Se aconchegue e me pergunte algo! Sou bem vivido nessa arte do cultivo. Me pergunte sobre o clima ideal para tal planta, como controlar pragas, os cuidados necessários para o cultivo..."
+          class="areaProsa"
+        ></textarea>
+        <button type="submit" class="cta lg:mb-8" id="btnSubmit">
+          Prosear!
+        </button>
+      </div>
     </form>
     <aside
       class="flex flex-col justify-center items-center mt-8 lg:mt-0 lg:bg-[url('../images/bg-prosa2.png')] lg:bg-clip-padding lg:bg-no-repeat lg:bg-cover lg:w-screen"
@@ -126,21 +136,21 @@
       >
         <div class="flex flex-col justify-center items-center">
           <button
-            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl xl:text-xl"
           >
             Como funciona o sistema de irrigação na agricultura?
           </button>
         </div>
         <div class="flex flex-col justify-center items-center">
           <button
-            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl xl:text-xl"
           >
             Como a tecnologia está impactando a agricultura moderna?
           </button>
         </div>
         <div class="flex flex-col justify-center items-center">
           <button
-            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl xl:text-xl"
           >
             Quais são as técnicas utilizadas para controlar pragas e doenças na
             agricultura?
@@ -148,7 +158,7 @@
         </div>
         <div class="flex flex-col justify-center items-center">
           <button
-            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl xl:text-xl"
           >
             Quais são as práticas recomendadas para o manejo do solo na
             agricultura?
@@ -156,7 +166,7 @@
         </div>
         <div class="flex flex-col justify-center items-center">
           <button
-            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl xl:text-xl"
           >
             Quais são os benefícios da agricultura orgânica em comparação com a
             agricultura convencional?
@@ -164,7 +174,7 @@
         </div>
         <div class="flex flex-col justify-center items-center">
           <button
-            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl"
+            class="btnIdea font-raleway text-lg bg-amareloEscuro w-4/5 p-3 rounded-lg lg:text-2xl xl:text-xl"
           >
             Conte-me um bom causo da época em que vivia na roça.
           </button>
@@ -173,7 +183,7 @@
           <div
             class="font-raleway text-lg bg-amareloEscuro p-3 rounded-lg flex flex-col justify-center items-center w-4/5 gap-2"
           >
-            <p class="lg:text-2xl">Como cultivar...</p>
+            <p class="lg:text-2 xl:text-xl">Como cultivar...</p>
             <input
               type="text"
               name=""
@@ -195,7 +205,9 @@
           <div
             class="font-raleway text-lg bg-amareloEscuro p-3 rounded-lg flex flex-col justify-center items-center w-4/5 gap-2"
           >
-            <p class="lg:text-2xl">Qual a melhor época para plantar...</p>
+            <p class="lg:text-2 xl:text-xl">
+              Qual a melhor época para plantar...
+            </p>
             <input
               type="text"
               name=""

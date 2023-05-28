@@ -24,6 +24,7 @@ const plantioLi = document.querySelector('.plantio-li');
 const btnPlantio = document.querySelector('#btnPlantio');
 const btnTryAgain = document.querySelector('#tryAgain');
 const navLinks = document.querySelectorAll('.nav-lin');
+const btnPass = document.querySelectorAll('.btnPass');
 
 // ------------------------ Main Functions -----------------------
 
@@ -76,6 +77,10 @@ function fetchWhy(recomendations, UF, mun) {
         if (i === recomendations.length - 1) {
           loading.classList.add('hidden');
           btnPlantio.classList.remove('hidden');
+          const pagination = `<div class="swiper-pagination"></div>`;
+          document
+            .querySelector('.swiper-wrapper')
+            .insertAdjacentHTML('afterend', pagination);
         }
       });
   });
@@ -95,10 +100,45 @@ function fetchWeather(UF, mun) {
         let strNew = `<li class="cityText">${json.text}</li>`;
         weatherLI.insertAdjacentHTML(`beforeend`, strNew);
       }
+      fetchImage(UF, mun);
     })
     .catch((error) => console.error('Error:', error))
     .finally(() => {
       loadingLocal.classList.add('hidden');
+    });
+}
+
+function fetchImage(UF, mun) {
+  const place = [mun, UF];
+  const strPlace = place.join(',');
+  let results;
+  fetch(`/placeImage/${strPlace}`)
+    .then((response) => response.json())
+    .then((json) => {
+      results = json;
+      console.log(json);
+      const newHTMLImg = `<img class= "w-full cityImg xl:w-1/2" src=${json[0]} alt="">`;
+      weatherLI.insertAdjacentHTML('beforeend', newHTMLImg);
+    })
+    .finally(() => {
+      let counter = 0;
+      btnPass.forEach((e) => {
+        e.addEventListener('click', () => {
+          if (e.value === 'up' && counter < results.length - 1) {
+            counter++;
+            weatherLI.lastElementChild.src = results[counter];
+          } else if (e.value === 'down' && counter > 0) {
+            counter--;
+            weatherLI.lastElementChild.src = results[counter];
+          } else if (e.value === 'down' && counter === 0) {
+            counter = results.length - 1;
+            weatherLI.lastElementChild.src = results[counter];
+          } else if (e.value === 'up' && counter === results.length - 1) {
+            counter = 0;
+            weatherLI.lastElementChild.src = results[counter];
+          }
+        });
+      });
     });
 }
 
@@ -125,6 +165,10 @@ function fetchPlant(recomendations, UF, mun) {
         if (i === recomendations.length - 1) {
           loadingPlantio.classList.add('hidden');
           btnTryAgain.classList.remove('hidden');
+          const pagination = `<div class="swiper-pagination"></div>`;
+          document
+            .querySelector('.swiper-wrapperPlant')
+            .insertAdjacentHTML('afterend', pagination);
         }
       });
   });
@@ -135,6 +179,7 @@ function reset() {
   weather.classList.add('hidden');
   document.querySelector('.cityText')?.remove();
   document.querySelector('.cityName')?.remove();
+  document.querySelector('.cityImg')?.remove();
   document.querySelectorAll('.recomendationLi')?.forEach((e) => {
     e.remove();
   });
