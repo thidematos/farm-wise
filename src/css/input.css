@@ -28,9 +28,12 @@ option {
   @apply bg-green-500 font-bree text-white p-4 rounded-lg text-center text-3xl hover:text-green-500 hover:bg-amareloEscuro drop-shadow-md shadow-lg lg:text-5xl xl:text-4xl;
 }
 
-.hints-li,
-.weather-li {
+.hints-li {
   @apply flex flex-col justify-center items-center p-5 gap-6 text-xl font-raleway font-bold text-white;
+}
+
+.weather-li {
+  @apply flex flex-col justify-center items-center gap-6 text-xl font-raleway font-bold text-white;
 }
 
 .cityName {
@@ -38,7 +41,11 @@ option {
 }
 
 .cityText {
-  @apply text-xl font-normal lg:text-2xl xl:w-1/2;
+  @apply text-xl font-normal lg:text-2xl xl:w-1/2 px-5;
+}
+
+.cityImg {
+  @apply rounded border-2 border-white shadow-md;
 }
 
 .recomendationLi {

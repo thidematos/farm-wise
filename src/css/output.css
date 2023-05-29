@@ -834,6 +834,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pt-4{
   padding-top: 1rem;
 }
@@ -1088,14 +1093,27 @@ option{
   }
 }
 
-.hints-li,
-.weather-li{
+.hints-li{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
   padding: 1.25rem;
+  font-family: Raleway;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.weather-li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   font-family: Raleway;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1121,6 +1139,8 @@ option{
 }
 
 .cityText{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 400;
@@ -1137,6 +1157,16 @@ option{
   .cityText{
     width: 50%;
   }
+}
+
+.cityImg{
+  border-radius: 0.25rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 1024px){
@@ -1534,6 +1564,11 @@ option{
   .lg\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:pt-0{
