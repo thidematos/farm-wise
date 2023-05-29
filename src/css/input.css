@@ -74,7 +74,7 @@ option {
 }
 
 .activeLink {
-  @apply lg:bg-white lg:text-azulAgua;
+  @apply bg-white text-azulAgua;
 }
 
 .headerProsa {
@@ -82,7 +82,7 @@ option {
 }
 
 .pProsa {
-  @apply font-raleway font-normal text-xl text-justify my-5 lg:text-2xl xl:text-xl;
+  @apply font-raleway font-normal text-xl text-justify my-5 lg:text-2xl xl:text-xl px-5 lg:px-0;
 }
 
 .areaProsa {

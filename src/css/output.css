@@ -819,6 +819,11 @@ video {
   padding: 1rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -827,11 +832,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pt-4{
@@ -935,12 +935,6 @@ video {
 .drop-shadow-2xl{
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.backdrop-opacity-100{
-  --tw-backdrop-opacity: opacity(1);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .ease-linear{
@@ -1279,13 +1273,11 @@ option{
   }
 }
 
-@media (min-width: 1024px){
-  .activeLink{
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: rgb(115 169 173 / var(--tw-text-opacity));
-  }
+.activeLink{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(115 169 173 / var(--tw-text-opacity));
 }
 
 .headerProsa{
@@ -1315,6 +1307,8 @@ option{
 .pProsa{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   text-align: justify;
   font-family: Raleway;
   font-size: 1.25rem;
@@ -1324,6 +1318,8 @@ option{
 
 @media (min-width: 1024px){
   .pProsa{
+    padding-left: 0px;
+    padding-right: 0px;
     font-size: 1.5rem;
     line-height: 2rem;
   }
